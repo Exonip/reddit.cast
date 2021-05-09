@@ -38,24 +38,27 @@ def is_used(post_id):
 
 
 def process_text(text):
-    text = text.replace("\n", " ")
-    text = text.replace(".", " . ")
-    text = text.replace("_", " ")
-    text = text.replace("\\", " ")
-    text = text.replace("&#x200b", " ")
-    text = text.replace("&#x200B", " ")
-    text = re.sub(r'^https?:\/\/.*[\r\n]*', '', text, flags=re.MULTILINE)
-    text = re.sub(r'\w+:\/{2}[\d\w-]+(\.[\d\w-]+)*(?:(?:\/[^\s/]*))*', '', text)
-    text = text.replace("#x200b", "")
     pattern = r'(?i)\b((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([' \
               r'^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:\'".,<>?«»“”‘’]))'
     match = re.findall(pattern, text)
     for m in match:
         url = m[0]
         text = text.replace(url, ' LINK ')
+    text = re.sub(r'\w+:\/{2}[\d\w-]+(\.[\d\w-]+)*(?:(?:\/[^\s/]*))*', '', text)
+    text = re.sub(r'^https?:\/\/.*[\r\n]*', '', text, flags=re.MULTILINE)
 
+    text = text.replace("&#x200b", " ")
+    text = text.replace("&#x200B", " ")
+    text = text.replace("#x200b", "")
+
+    text = text.replace("\n", " ")
+    text = text.replace("_", " ")
+    text = text.replace("\\", " ")
     text = text.replace("*", " ")
+
+    text = text.replace(".", " . ")
     return text
+
 
 
 def get_speech_config():
