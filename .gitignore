@@ -215,6 +215,6 @@ settings.json
 
 list.txt
 
-public/media/*
+public/media/*.mp3
 
 public/feed.xml
