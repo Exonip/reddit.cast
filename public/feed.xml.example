@@ -1,0 +1,30 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xml:lang="en" version="2.0">
+<channel>
+<title>Reddit Cast</title>
+<link>https://reddit.cast.exonip.de/</link>
+<atom:link href="https://reddit.cast.exonip.de/feed.xml" rel="self" type="application/rss+xml"/>
+<description>In this podcast we publish new and popular content from entertaining subreddits daily!</description>
+<generator>Podcast Generator 3.1.1 - http://www.podcastgenerator.net</generator>
+<lastBuildDate>Sat, 08 May 2021 18:57:25 +0200</lastBuildDate>
+<language>en</language>
+<copyright>All rights reserved</copyright>
+<itunes:image href="https://reddit.cast.exonip.de/images/itunes_image.jpg"/>
+<image>
+<url>https://reddit.cast.exonip.de/images/itunes_image.jpg</url>
+<title>Reddit Cast</title>
+<link>https://reddit.cast.exonip.de/</link>
+</image>
+<itunes:summary>In this podcast we publish new and popular content from entertaining subreddits daily!</itunes:summary>
+<itunes:subtitle>Daily Reddit readings</itunes:subtitle>
+<itunes:author>Exonip</itunes:author>
+<itunes:owner>
+<itunes:name>Exonip</itunes:name>
+<itunes:email>reddit.cast@exonip.de</itunes:email>
+</itunes:owner>
+<itunes:explicit>no</itunes:explicit>
+<itunes:category text="Comedy"/>
+<itunes:category text="Technology"/>
+<itunes:category text="Comedy:Improv"/>
+
+</channel>
+</rss>

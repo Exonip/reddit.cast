@@ -1,0 +1,16 @@
+{
+   "reddit":{
+      "client_id":"XXXXXXXXXXXXX",
+      "client_secret":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "user_agent":"python:de.exonip.reddit.cast:v1 (by u/exonip)"
+   },
+   "azure": {
+      "region": "eastus",
+      "key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+   },
+   "subreddits": ["prorevenge", "MaliciousCompliance", "idontworkherelady", "pettyrevenge", "tifu", "militarystories"],
+   "introduction": "Welcome to this episode of reddit cast! The subreddit we will listen to today is called r slash ",
+   "first-post-announcement": "Our first post of this episode comes from $USERNAME and it titled $TITLE . $CONTENT",
+   "next-post-announcement": "The next post from $USERNAME is titled $TITLE . $CONTENT",
+   "last-post-announcement": "Today's last post from $USERNAME is titled $TITLE . $CONTENT"
+}
