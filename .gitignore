@@ -218,3 +218,5 @@ list.txt
 public/media/*.mp3
 
 public/feed.xml
+
+*.wav
