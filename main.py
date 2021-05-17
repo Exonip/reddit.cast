@@ -127,7 +127,7 @@ def add_episode(subreddit, mp3_name, episode_credits):
 
     title = "r/" + subreddit + " | daily reddit podcast"
 
-    pubDate = datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z")
+    pubDate = datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z") + " GMT"
 
     mp3_link = "https://reddit.cast.exonip.de/media/" + mp3_name + ".mp3"
 
